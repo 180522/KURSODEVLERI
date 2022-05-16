@@ -1,0 +1,11 @@
+import random
+sayılar=[]
+a=random.randint(1000000000000000,9999999999999999)
+while True:
+	girilen=int(input("Bitirmek için ' 5 ' değerini girin eğer istemiyorsanız gelişi güzel sayı basınız." ))
+	sayılar.append(a)
+	if girilen==5:
+		break
+	else:
+		continue	
+print(sayılar)

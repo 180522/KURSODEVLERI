@@ -1,0 +1,25 @@
+import time
+ad=str(input("Lütfen isminizi giriniz:" ))
+doğru_bildiklerin=[]
+yanlış_bildiklerin=[]
+i=0
+c=[]
+def sorubir():
+	b=0
+	print(f"1.soru\n {ad} bu soruda 1=2 doğru mu yanlış mı?\nA) Doğru\nB) Yanlış")
+	a=str(input("Lütfen cevabı yazınız A ya da B" ))
+	if a=="A":
+		print("Aferin doğru bildiniz")
+		doğru_bildiklerin.append("Birinci soru")
+		while i<=5:
+			time.sleep(1)
+			b+=1
+			c.append(b)
+			break
+	else:
+		print("Yanlış bildiniz.")
+		yanlış_bildiklerin.append("İkinci soru")
+sorubir()
+print(doğru_bildiklerin)
+print(yanlış_bildiklerin)
+print(c)

@@ -1,0 +1,24 @@
+print("Bu uygulamada yazarak aylık giderlerinizi öğrenebilirsiniz ve şu şekilde yazmalısınız: 'elektirikfaturası','kırtasiye','sufaturası',  'mutfakgideri','giyecek'.")
+def elektirikfaturası():
+	print("Ekektirik faturasının fiyatı: 180")
+def kırtasiye():
+	print("Kırtasiye faturası fityatı: 350")
+def sufaturası():
+	print("Su faturasının fiyatı: 120TL")
+def mutfakgideri():
+	print("Mutfak giderinin fiyatı: 1000TL")
+def giyecek():
+	print("Giyecek faturasının fiyatı: 450TL")
+b=input("Lütfen görmek istediğiniz gideri girin")
+if b=="sufaturası":
+	sufaturası()
+elif b=="elektirikfaturası":
+	elektirikfaturası()
+elif b=="kırtasiye":
+	kırtasiye()
+elif b=="mutfakgideri":
+	mutfakgideri()
+elif b=="giyecek":
+	giyecek()
+else:
+	print("Değeri olmayan bir karakter dizisi girdiniz.")

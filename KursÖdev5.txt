@@ -1,0 +1,31 @@
+import time
+c=[]
+print("Meslek bulma uygulamasına hoşgeldiniz.\nBu oyun bazı sorular soracak ve bu sorulara sorduğunuz cevaplara göre en sonda size mesleğinizi söyleyeceğiz.")
+def sorubir():
+	print("En çok hangi dersi seviyorsunuz.\nA)Bilgisayar\nB)Biyoloji\nC)Fizik")
+	a=input("Cevabınızı yazınız:")
+	a=a.upper()
+	print("En çok hangisini izlemek ilginizi çekiyor.\nA)Yazılım videoları izlemek\nB)Motor videoları izlemek\nC)Ameliyat videoları izlemek")
+	b=input("Cevabınızı yazınız:")
+	b=b.upper()
+	if a=='A' and b=='A':
+		print("Yazılımcısınız")
+	elif a=='B' and b=='A':
+		print("Tıp teknisyenisiniz")
+	elif a=='C' and b=='A':
+		print("Makine mühendisisiniz")
+	elif a=='A' and b=='B':
+		print("Elektirik elektronik mühendisisiniz.")
+	elif a=='A' and b=='C':
+		print("Biyotejiknoloji mühendisisiniz.")
+	elif a=='B' and b=='C':
+		print("Cerrahısınız.")
+	elif a=='B' and b=='B':
+		print("Beyin cerrahısınız.")
+	elif a=='C' and b=='B':
+		print("Uçak mühendisi")
+	elif a=='C' and b=='C':
+		print("Nanoteknoloji")
+	else:
+		print("Maalesef yanlış girdiğinizden dolayı işsiz kaldınız :)")
+sorubir()

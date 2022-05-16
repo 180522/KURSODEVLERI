@@ -1,0 +1,19 @@
+import random
+def sayitahminoyunu():
+	sayac=0
+	a=random.randint(1,10)
+	print("Bu oyunda 3 sayı yazızıcaksınız bu sayıların toplamı bilgisayaın seçtiği sayıya eşit olursa kazanıyorsunuz ayrıca bu sayılar 1 ile 10 arasında (1 ile 10 dahil).")
+	while True:
+		b=int(input("Sayıyı tahmin etmek için sayı giriniz."))
+		c=int(input("Sayıyı tahmin etmek için sayı giriniz."))
+		d=int(input("Sayıyı tahmin etmek için sayı giriniz."))
+		if a==(b+c+d):
+			sayac+=1
+			print(f"Tebrikler sayıyı buldunuz ve toplam {sayac} tahminde buldunuz.")
+			break
+		elif a>(b+c+d):
+			print("Lütfen büyük bir sayı giriniz.")
+		elif a<(b+c+d):
+			print("Lütfen küçük bir sayı giriniz.")
+		sayac+=1
+sayitahminoyunu()
